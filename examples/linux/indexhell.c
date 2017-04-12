@@ -1,4 +1,6 @@
-
+/* This example generates a complex path constraint. Manticore will fail on this one.
+ *
+ */
 
 
 main(){

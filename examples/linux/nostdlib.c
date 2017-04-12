@@ -1,11 +1,11 @@
-/* Minimal toy example with some input output no stdlib
+/* 32 bit example that do direct OS calls without the use of libc 
  * Symbolic values are read from stdin using int80 or syscall. The program has 2 posible paths
  * 
  * Compile with :
- *   $ gcc -fno-builtin -static -nostdlib -m32  -fomit-frame-pointer  toy001.c  -o toy001
+ *   $ gcc -fno-builtin -static -nostdlib -m32  -fomit-frame-pointer nostdlib.c  -o nostdlib
  * 
  * Analize it with:
- *   $ python system.py --sym stdin examples/toy001-nostdlib
+ *   $ manticore nostdlib
 */
 
 

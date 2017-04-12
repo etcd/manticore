@@ -1,11 +1,12 @@
 /* Minimal toy example with input output using libc
- * Symbolic values are read from stdin using standar libc calls. 
+ * Symbolic values are read from stdin using standar libc calls.
+ * By default Manticore cli assumes 256 symbolic chars in th input
  *    
  * Compile with :
- *   $ gcc toy002-libc.c -o toy002-libc
+ *   $ gcc basic.c -static -o basic
  *     
- * Analize it with:
- *   $ python system.py --sym stdin examples/toy002-libc
+ * Analyze it with:
+ *   $ manticore basic
 */
 
 #include <stdio.h>

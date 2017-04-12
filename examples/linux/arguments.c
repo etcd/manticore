@@ -3,10 +3,10 @@
  * The "special" character '+' marks symbolic bytes on the argyuments to the program.
  *
  * Compile with :
- *   $ gcc toy005-arguments.c  -o toy005-arguments
+ *   $ gcc arguments.c -static -o arguments
  *
  * Analize it with:
- *   $ python system.py example/toy005-arguments ++++++++++
+ *   $ manticore arguments ++++++++++
 */
 
 #include <stdio.h>

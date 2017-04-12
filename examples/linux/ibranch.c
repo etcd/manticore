@@ -1,13 +1,13 @@
-/* Minimal toy example with input output
+/* Minimal example that uses symbolic branch 
  *
  * The symbolic input is taken from command line argumets passed to the interpreted program
- * Will use the argv input to select a pointer from a lit and call it.
+ * Will use the argv input to select an item from a array of 2 function pointers and then call it.
  *
  * Compile with :
- *   $ gcc toy006-ibranch.c  -o toy006-ibranch
+ *   $ gcc ibranch.c -static -o ibranch
  *
  * Analize it with:
- *   $ python system.py example/toy006-ibranch +
+ *   $ manticore ibranch +
 */
 
 #include <stdio.h>
